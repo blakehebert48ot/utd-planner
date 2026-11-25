@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+# Downloaded catalog pages are re-fetchable; only test fixtures are committed.
+data/raw/
+# Never commit real student records.
+data/students/
+# Generated from public grade CSVs (npm run fetch:grades), ~11 MB.
+data/grades/
+# Built by npm run build:ext-data (~1.2 MB)
+extension/data/

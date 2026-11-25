@@ -1,0 +1,32 @@
+{
+  "name": "utd-planner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Plans a UT Dallas student's next semester from the official catalog and fills their Orion shopping cart.",
+  "scripts": {
+    "build:rules": "tsx scripts/build-rules.ts",
+    "audit:demo": "tsx scripts/audit-demo.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "fetch:grades": "tsx scripts/fetch-grades.ts",
+    "profs": "tsx scripts/profs-demo.ts",
+    "nebula:check": "tsx scripts/nebula-check.ts",
+    "schedule:demo": "tsx scripts/schedule-demo.ts",
+    "build:ext": "node scripts/build-extension.mjs",
+    "build:ext-data": "tsx scripts/build-ext-data.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^31.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

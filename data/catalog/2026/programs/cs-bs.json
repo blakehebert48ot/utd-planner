@@ -1,0 +1,478 @@
+{
+  "programId": "cs-bs",
+  "programName": "Computer Science (BS)",
+  "catalogYear": 2026,
+  "sourceUrl": "https://catalog.utdallas.edu/2026/undergraduate/programs/ecs/computer-science",
+  "totalHours": 124,
+  "upperDivisionHours": 45,
+  "blocks": [
+    {
+      "id": "communication",
+      "title": "Communication",
+      "domain": "core",
+      "statedHours": 6,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "RHET 1302"
+          },
+          {
+            "type": "course",
+            "course": "ECS 2390"
+          }
+        ]
+      },
+      "notes": [
+        "Semester credit hours fulfill the communication component of the Core Curriculum."
+      ],
+      "alternative": {
+        "type": "hours",
+        "hours": 6,
+        "from": {
+          "coreArea": "010"
+        }
+      }
+    },
+    {
+      "id": "mathematics",
+      "title": "Mathematics",
+      "domain": "core",
+      "statedHours": 3,
+      "requirement": {
+        "type": "course",
+        "course": "MATH 2413",
+        "alternatives": [
+          "MATH 2417"
+        ]
+      },
+      "notes": [
+        "Three semester credit hours of Calculus are counted under Mathematics Core, and five semester credit hours of Calculus are counted as Component Area Option Core."
+      ],
+      "alternative": {
+        "type": "hours",
+        "hours": 3,
+        "from": {
+          "coreArea": "020"
+        }
+      }
+    },
+    {
+      "id": "life-and-physical-sciences",
+      "title": "Life and Physical Sciences",
+      "domain": "core",
+      "statedHours": 6,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "PHYS 2325",
+            "alternatives": [
+              "PHYS 2421"
+            ]
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2326",
+            "alternatives": [
+              "PHYS 2422"
+            ]
+          }
+        ]
+      },
+      "notes": [
+        "Six semester credit hours of Physics are counted under Science core, and one semester credit hour of Physics (PHYS 2125) is counted as Component Area Option Core."
+      ],
+      "alternative": {
+        "type": "hours",
+        "hours": 6,
+        "from": {
+          "coreArea": "030"
+        }
+      }
+    },
+    {
+      "id": "language-philosophy-and-culture",
+      "title": "Language, Philosophy and Culture",
+      "domain": "core",
+      "statedHours": 3,
+      "requirement": {
+        "type": "hours",
+        "hours": 3,
+        "from": {
+          "coreArea": "040"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "creative-arts",
+      "title": "Creative Arts",
+      "domain": "core",
+      "statedHours": 3,
+      "requirement": {
+        "type": "hours",
+        "hours": 3,
+        "from": {
+          "coreArea": "050"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "american-history",
+      "title": "American History",
+      "domain": "core",
+      "statedHours": 6,
+      "requirement": {
+        "type": "hours",
+        "hours": 6,
+        "from": {
+          "coreArea": "060"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "government-political-science",
+      "title": "Government/Political Science",
+      "domain": "core",
+      "statedHours": 6,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "GOVT 2305"
+          },
+          {
+            "type": "hours",
+            "hours": 3,
+            "from": {
+              "coreArea": "070"
+            }
+          }
+        ]
+      },
+      "notes": [],
+      "alternative": {
+        "type": "hours",
+        "hours": 6,
+        "from": {
+          "coreArea": "070"
+        }
+      }
+    },
+    {
+      "id": "social-and-behavioral-sciences",
+      "title": "Social and Behavioral Sciences",
+      "domain": "core",
+      "statedHours": 3,
+      "requirement": {
+        "type": "hours",
+        "hours": 3,
+        "from": {
+          "coreArea": "080"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "component-area-option",
+      "title": "Component Area Option",
+      "domain": "core",
+      "statedHours": 6,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "MATH 2413",
+            "alternatives": [
+              "MATH 2417"
+            ]
+          },
+          {
+            "type": "course",
+            "course": "MATH 2414",
+            "alternatives": [
+              "MATH 2419"
+            ]
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2125"
+          }
+        ]
+      },
+      "notes": [
+        "Three semester credit hours of Calculus are counted under Mathematics Core, and five semester credit hours of Calculus are counted as Component Area Option Core.",
+        "Six semester credit hours of Physics are counted under Science core, and one semester credit hour of Physics (PHYS 2125) is counted as Component Area Option Core."
+      ],
+      "alternative": {
+        "type": "hours",
+        "hours": 6,
+        "from": {
+          "coreArea": "090"
+        }
+      }
+    },
+    {
+      "id": "major-preparatory-courses",
+      "title": "Major Preparatory Courses",
+      "domain": "major",
+      "statedHours": 24,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "ECS 1100"
+          },
+          {
+            "type": "course",
+            "course": "ECS 1210"
+          },
+          {
+            "type": "course",
+            "course": "CS 1436"
+          },
+          {
+            "type": "course",
+            "course": "CS 1337"
+          },
+          {
+            "type": "course",
+            "course": "CS 2305"
+          },
+          {
+            "type": "course",
+            "course": "CS 2336"
+          },
+          {
+            "type": "course",
+            "course": "CS 2340"
+          },
+          {
+            "type": "course",
+            "course": "GOVT 2305"
+          },
+          {
+            "type": "course",
+            "course": "MATH 2418"
+          },
+          {
+            "type": "course",
+            "course": "RHET 1302"
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2125"
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2126"
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2325",
+            "alternatives": [
+              "PHYS 2421"
+            ]
+          },
+          {
+            "type": "course",
+            "course": "PHYS 2326",
+            "alternatives": [
+              "PHYS 2422"
+            ]
+          },
+          {
+            "type": "oneOf",
+            "options": [
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "course": "MATH 2413"
+                  },
+                  {
+                    "type": "course",
+                    "course": "MATH 2414"
+                  }
+                ]
+              },
+              {
+                "type": "all",
+                "items": [
+                  {
+                    "type": "course",
+                    "course": "MATH 2417"
+                  },
+                  {
+                    "type": "course",
+                    "course": "MATH 2419"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "notes": [
+        "Transfer students with sufficient background may petition to substitute upper-division semester credit hours in the major for this class.",
+        "BS in Data Science students can substitute MATH 3315 for CS 2305.",
+        "Semester credit hours fulfill the communication component of the Core Curriculum.",
+        "Six semester credit hours of Physics are counted under Science core, and one semester credit hour of Physics (PHYS 2125) is counted as Component Area Option Core.",
+        "Three semester credit hours of Calculus are counted under Mathematics Core, and five semester credit hours of Calculus are counted as Component Area Option Core."
+      ]
+    },
+    {
+      "id": "major-core-courses",
+      "title": "Major Core Courses",
+      "domain": "major",
+      "statedHours": 36,
+      "requirement": {
+        "type": "all",
+        "items": [
+          {
+            "type": "course",
+            "course": "ECS 2390"
+          },
+          {
+            "type": "course",
+            "course": "CS 3162"
+          },
+          {
+            "type": "course",
+            "course": "CS 3341"
+          },
+          {
+            "type": "course",
+            "course": "CS 3345"
+          },
+          {
+            "type": "course",
+            "course": "CS 3354"
+          },
+          {
+            "type": "course",
+            "course": "CS 3377"
+          },
+          {
+            "type": "course",
+            "course": "CS 4141"
+          },
+          {
+            "type": "course",
+            "course": "CS 4337"
+          },
+          {
+            "type": "course",
+            "course": "CS 4341"
+          },
+          {
+            "type": "course",
+            "course": "CS 4347"
+          },
+          {
+            "type": "course",
+            "course": "CS 4348"
+          },
+          {
+            "type": "course",
+            "course": "CS 4349"
+          },
+          {
+            "type": "course",
+            "course": "CS 4384"
+          },
+          {
+            "type": "course",
+            "course": "CS 4485"
+          }
+        ]
+      },
+      "notes": [
+        "Semester credit hours fulfill the communication component of the Core Curriculum.",
+        "BS in Data Science students can substitute STAT 3355 for CS 3341."
+      ]
+    },
+    {
+      "id": "major-technical-electives",
+      "title": "Major Technical Electives",
+      "domain": "major",
+      "statedHours": 9,
+      "requirement": {
+        "type": "hours",
+        "hours": 9,
+        "from": {
+          "courses": [
+            "CS 4314",
+            "CS 4315",
+            "CS 4332",
+            "CS 4334",
+            "CS 4336",
+            "CS 4339",
+            "CS 4352",
+            "CS 4361",
+            "CS 4365",
+            "CS 4375",
+            "CS 4376",
+            "CS 4386",
+            "CS 4389",
+            "CS 4390",
+            "CS 4391",
+            "CS 4392",
+            "CS 4393",
+            "CS 4394",
+            "CS 4395",
+            "CS 4396",
+            "CS 4397",
+            "CS 4398",
+            "CS 4399",
+            "CS 4459",
+            "EE 4325",
+            "SE 4351",
+            "SE 4352",
+            "SE 4367",
+            "SE 4381"
+          ],
+          "patterns": [
+            {
+              "subject": "CS",
+              "minNumber": 4000,
+              "maxNumber": 4999
+            }
+          ]
+        }
+      },
+      "notes": [
+        "PCS technical electives are 4000 level courses in computer science or closely related areas approved by the student's academic advisor. The following courses may be used as technical electives without the explicit approval of an advisor:",
+        "If eligible, graduate courses may also be used to satisfy CS technical elective requirements."
+      ]
+    },
+    {
+      "id": "free-electives",
+      "title": "Free Electives",
+      "domain": "major",
+      "statedHours": 13,
+      "requirement": {
+        "type": "manual",
+        "text": "Free electives: covered by reaching the degree's total credit hours."
+      },
+      "notes": [
+        "Both lower- and upper-division courses may count as free electives."
+      ]
+    }
+  ],
+  "needsReview": [
+    "Section note (not a rule): Curriculum Requirements can be fulfilled by other approved courses. The courses listed are recommended as the most efficient way to satisfy both Core Curriculum and Major Requirements at UT Dallas.",
+    "Overrides applied (UTD degree audit (Orion > My Academics > My Degree Audit), compared 2026-11-24. These alternatives are accepted by the audit but not listed on the catalog program page.)"
+  ],
+  "verified": true,
+  "verification": "2026-11-24: compared block by block with UTD degree audit (Orion > My Degree Audit) for one real 2026 CS student (first year; most blocks unmet). Every block matched after adding PHYS 2421/2422 as audit-accepted alternatives. Not yet exercised: technical electives, upper-division and GPA paths with completed grades."
+}

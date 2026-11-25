@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "UTD Planner – Cart Filler",
+  "version": "0.2.0",
+  "description": "Builds a schedule inside your hours and fills your UT Dallas Orion shopping cart. Never enrolls you.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://dacs-prd.utshare.utsystem.edu/*"],
+  "action": { "default_popup": "popup.html", "default_title": "UTD Planner" },
+  "web_accessible_resources": [
+    { "resources": ["data/prof-stats.json"], "matches": ["https://dacs-prd.utshare.utsystem.edu/*"] }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://dacs-prd.utshare.utsystem.edu/*"],
+      "js": ["dist/content.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ]
+}

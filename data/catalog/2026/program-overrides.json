@@ -1,0 +1,9 @@
+{
+  "cs-bs": {
+    "source": "UTD degree audit (Orion > My Academics > My Degree Audit), compared 2026-11-24. These alternatives are accepted by the audit but not listed on the catalog program page.",
+    "alternatives": {
+      "PHYS 2325": ["PHYS 2421"],
+      "PHYS 2326": ["PHYS 2422"]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UTD Planner</title>
+    <style>
+      :root { --orange: #e87500; --green: #154734; --ink: #1d1d1f; --dim: #6e6e73; --line: #e5e5ea; --warn-bg: #fff4e5; }
+      * { box-sizing: border-box; }
+      body { width: 380px; margin: 0; padding: 14px 16px 12px; font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fff; }
+      h1 { font-size: 15px; margin: 0 0 2px; color: var(--green); }
+      h3 { font-size: 12px; margin: 12px 0 4px; }
+      .sub { color: var(--dim); margin: 0 0 10px; }
+      .field { margin: 0 0 10px; }
+      .field > .label { display: block; font-weight: 600; margin-bottom: 4px; }
+      .hours { display: flex; align-items: center; gap: 6px; padding: 8px 10px; border: 2px solid var(--orange); border-radius: 8px; background: #fffaf4; }
+      .hours input { flex: 1; padding: 5px 6px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+      textarea { width: 100%; height: 52px; resize: vertical; font: 13px ui-monospace, Menlo, monospace; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; }
+      select { width: 100%; padding: 5px 6px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+      .row { display: flex; gap: 6px; }
+      .row > * { flex: 1; }
+      label.check { display: flex; gap: 6px; align-items: center; margin: 6px 0 10px; }
+      button { width: 100%; padding: 9px; border: 0; border-radius: 6px; font-weight: 600; cursor: pointer; background: var(--green); color: #fff; }
+      button:disabled { opacity: 0.4; cursor: default; }
+      button.secondary { background: #f2f2f7; color: var(--ink); }
+      .buttons { display: flex; gap: 6px; }
+      ul { padding-left: 4px; list-style: none; margin: 6px 0; }
+      li { margin: 4px 0; }
+      .dim { color: var(--dim); }
+      .note { margin-top: 4px; }
+      .notice { background: var(--warn-bg); border-radius: 6px; padding: 6px 8px; margin: 4px 0; }
+      .pick { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; margin: 4px 0; }
+      .pick.out { border-color: var(--orange); }
+      .pick a { color: var(--green); }
+      .hint { color: var(--dim); font-size: 11.5px; margin-top: 3px; }
+      .foot { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--dim); font-size: 11.5px; }
+    </style>
+  </head>
+  <body>
+    <h1>UTD Planner</h1>
+    <p class="sub">Be signed in to Orion, on any page. It finds sections inside your hours, fills your cart, and brings you back to it.</p>
+
+    <div class="field">
+      <span class="label">When can you be at school? (required)</span>
+      <div class="hours">
+        <input type="time" id="from" aria-label="Earliest class start" />
+        <span>to</span>
+        <input type="time" id="to" aria-label="Latest class end" />
+      </div>
+      <div class="hint" id="hoursHint">Every class will start and end inside these hours when possible.</div>
+    </div>
+
+    <div class="field">
+      <span class="label">Classes to take</span>
+      <textarea id="courses" placeholder="e.g. CS 2336, CS 2340, ECS 2390, MATH 2419"></textarea>
+    </div>
+
+    <div class="row field">
+      <div><span class="label">Semester</span><select id="term"></select></div>
+      <div>
+        <span class="label">Professors</span>
+        <select id="prof">
+          <option value="easiest">Best grades</option>
+          <option value="fewestDrops">Fewest drops</option>
+          <option value="ignore">Don't care</option>
+        </select>
+      </div>
+    </div>
+    <label class="check"><input type="checkbox" id="waitlist" /> Include full classes (join the waitlist)</label>
+
+    <div class="buttons">
+      <button id="fill">Build schedule &amp; fill my cart</button>
+      <button id="resume" class="secondary" hidden>Resume</button>
+      <button id="stop" class="secondary" hidden>Stop</button>
+    </div>
+
+    <div id="status" style="margin-top: 10px"></div>
+    <div id="results"></div>
+
+    <div class="foot">🔒 Never enrolls you. It only searches classes and adds them to your cart. On your enrollment date, you click <b>Finish Enrolling</b> yourself.</div>
+    <script src="dist/popup.js"></script>
+  </body>
+</html>
